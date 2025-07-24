@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Bootstrap 5 Boilerplate</title>
+    <title>HANSUSANNA</title>
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Pretendard 웹폰트 불러오기 -->
@@ -34,7 +34,7 @@
         /* 기본 네비게이션 링크 스타일 */
         .navbar-nav .nav-link {
         font-weight: 500;
-        color: #333;
+        color: #5c5c5c;
         padding: 0.5rem 1rem;
         transition: color 0.2s ease;
         gap:20px;
@@ -42,8 +42,8 @@
 
         .navbar-nav .nav-link:hover,
         .navbar-nav .nav-link.active {
-        color: #eb0c50; /* 핑크 계열 포인트 컬러 */
-        font-weight: 700;
+        color: #2EC4B6; /* 핑크 계열 포인트 컬러 */
+        font-weight: 500;
         }
 
         /* 드롭다운 메뉴 스타일 */
@@ -60,7 +60,7 @@
 
         .dropdown-item:hover {
         background-color: #f9f9f9;
-        color: #eb0c50;
+        color: #2EC4B6 !important;
         }
 
         /* 언어 선택 버튼 */
@@ -71,14 +71,14 @@
 
         /* 로그인 버튼 */
         .btn.btn-primary {
-        background-color: #eb0c50;
-        border-color: #eb0c50;
+        background-color: #2EC4B6;
+        border-color: #038175;
         font-weight: 500;
         }
 
         .btn.btn-primary:hover {
-        background-color: #c00945;
-        border-color: #c00945;
+        background-color: #038175;
+        border-color: #038175;
         }
 
         section {
@@ -159,14 +159,11 @@
                     data-bs-toggle="dropdown" aria-expanded="false">
                     SKIN
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="experienceDropdown">
-                    <li><a class="dropdown-item" href="">투어</a></li>
-                    <li><a class="dropdown-item" href="">연구소</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="">건강존</a></li>
+                    <ul class="dropdown-menu" >
+                        <li><a class="dropdown-item" href="">투어</a></li>
+                        <li><a class="dropdown-item" href="">연구소</a></li>
+                        <li><a class="dropdown-item" href="">건강존</a></li>
                     </ul>
-                </li>
-        
                 <li class="nav-item"><a class="nav-link" href="/notice">NOTICE</a></li>
                 <li class="nav-item"><a class="nav-link" href="/booking">예약하기</a></li>
                 <li class="nav-item"><a class="nav-link" href="/faq">자주 묻는 질문</a></li>
@@ -178,7 +175,7 @@
                     <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="langDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                     한국어
                     </button>
-                    <ul class="dropdown-menu" aria-labelledby="langDropdown">
+                    <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="?lang=en">English</a></li>
                         <li><a class="dropdown-item" href="?lang=ja">日本語</a></li>
                         <li><a class="dropdown-item" href="?lang=zh">中文</a></li>
