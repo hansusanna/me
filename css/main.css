@@ -1,56 +1,53 @@
     /* 헤더 기본 설정 */
-    .navbar {
-    background-color: #ffffff;
-    border-bottom: 1px solid #eee;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
-    transition: box-shadow 0.3s ease;
+    body {
+        font-weight: 400;
     }
-
+    section {
+        margin-top: 100px; /* 헤더 높이만큼 여백 추가 */
+        height: 100vh; 
+    }
     #mainNavbar {
-    padding-left: 50px;
-    align-items: center;     /* 세로(수직) 가운데 */
+        padding-left: 50px;
+        align-items: center;
     }
-
-    /* 로고 크기 조정 */
-    .navbar-brand img {
-    height: 38px;
-    max-height: 100%;
+    /* 기본 네비게이션 스타일 */
+    .navbar {
+        background-color: #ffffff;
+        border-bottom: 1px solid #eee;
+        padding-top: 0.7rem;
+        padding-bottom: 0.7rem;
+        transition: box-shadow 0.3s ease;
     }
-
-    /* 기본 네비게이션 링크 스타일 */
+    .navbar.scrolled {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
     .navbar-nav .nav-link {
-    font-weight: 500;
-    color: #5c5c5c;
-    padding: 0.5rem 1rem;
-    transition: color 0.2s ease;
-    gap:20px;
+        font-weight: 500;
+        color: #5c5c5c;
+        padding: 0.5rem 1rem;
+        transition: color 0.2s ease;
+        gap:20px;
     }
-
     .navbar-nav .nav-link:hover,
     .navbar-nav .nav-link.active {
-    color: #2EC4B6; /* 핑크 계열 포인트 컬러 */
-    font-weight: 500;
+        color: #2EC4B6; 
+        font-weight: 500;
     }
-
     /* 드롭다운 메뉴 스타일 */
     .dropdown-menu {
-    border-radius: 0.4rem;
-    border: 1px solid #eee;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        border-radius: 0.4rem;
+        border: 1px solid #eee;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     }
-
     .dropdown-item {
-    padding: 0.5rem 1rem;
-    font-size: 0.95rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.95rem;
     }
-
     .dropdown-item:hover {
-    background-color: #f9f9f9;
-    color: #2EC4B6 !important;
+        background-color: #f9f9f9;
+        color: #2EC4B6 !important;
     }
-
-    /* 언어 선택 버튼 */
+    /* 언어 선택 드롭 버튼 */
     #langDropdown {
     font-size: 0.875rem;
     padding: 0.375rem 0.75rem;
@@ -66,11 +63,6 @@
     .btn.btn-primary:hover {
     background-color: #038175;
     border-color: #038175;
-    }
-
-    section {
-    margin-top: 100px; /* 헤더 높이만큼 여백 추가 */
-    height: 500px; /* 전체 화면 높이 */
     }
 
     /* 반응형 - 모바일 메뉴 */
